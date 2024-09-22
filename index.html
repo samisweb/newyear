@@ -106,13 +106,14 @@ canvas {
 
 <body>
   <div class="middle">
-    <h1 class="label">Days Remaining Until <script>
-        let currentYear = new Date().getFullYear();
-        let nextYear = currentYear + 1;
-        document.getElementById("nextYear").textContent = nextYear;
-    </script>
-	    
-    </h1>
+   <h1 class="label">Days Remaining Until <span id="nextYears"></span></h1>
+
+<script>
+    let currentYear = new Date().getFullYear();
+    let nextYear = currentYear + 1;
+    document.getElementById("nextYears").textContent = nextYear;
+</script>
+	  
     <div class="time">
       <span>
 						<div id="d">00</div>
